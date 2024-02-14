@@ -1,9 +1,18 @@
-<script setup lang="ts">
-import { ref } from 'vue'
-
-defineProps<{ msg: string }>()
-
-const count = ref(0)
+<script>
+export default {
+  name: 'HelloWorld2',
+  props: {
+    msg: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      count: 0,
+    };
+  },
+}
 </script>
 
 <template>
@@ -13,7 +22,7 @@ const count = ref(0)
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
-      <code>components/HelloWorld.vue</code> to test HMR
+      <code>components/HelloWorld2.vue</code> to test HMR
     </p>
   </div>
 </template>
