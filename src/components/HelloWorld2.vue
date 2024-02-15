@@ -19,7 +19,7 @@ export default {
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button data-cy="hello-world-2-button" type="button" @click="count++">count is {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld2.vue</code> to test HMR
